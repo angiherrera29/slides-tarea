@@ -41,8 +41,10 @@ slides:
    slide-data: "Ejercicios recomendados para aplicar los conceptos:<ul><li><strong>Práctica 1:</strong> Implementar un código de paridad en un conjunto de datos y verificar su efectividad para la detección de errores de un solo bit.</li><li><strong>Práctica 2:</strong> Crear un algoritmo CRC y probarlo en diferentes tipos de datos binarios para identificar errores en la transmisión.</li><li><strong>Práctica 3:</strong> Aplicar un código de Hamming en un sistema de transmisión para corregir errores y verificar la precisión de los datos recibidos.</li></ul>"
    background: "#FFA500"
 
- - title: "<h1 style='font-size: 50px;'>Más sobre Detección y Corrección de Errores</h1>"
+ - title: "<h1 style='font-size: 50px; color: white;'>Más sobre Detección y Corrección de Errores</h1>"
    slide-data: "Consulta el libro <em>Data Telecommunications</em> para explorar en detalle cada tipo de medio de transmisión, sus características técnicas y aplicaciones prácticas en redes de comunicación actuales."
+   background: "#000000"
+
 ---
 
 {% for slide in page.slides %}                 
@@ -52,3 +54,4 @@ slides:
         {% if slide.image %}<img src="{{ slide.image }}" alt="{{ slide.title }}" style="max-width: 100%; height: auto;">{% endif %}
 </section>               
 {% endfor %}
+
