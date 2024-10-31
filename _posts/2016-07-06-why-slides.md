@@ -1,32 +1,30 @@
 ---
 title: "Capítulo 10: Detección y Corrección de Errores en Comunicaciones de Datos y Redes"
 layout: post
-permalink: /deteccion-y-correccion/
-background: '#0a5'
+permalink: "/deteccion-y-correccion/"
+background: "#0a5"
 
 slides:
- - title: "<h3>Introducción a la Detección y Corrección de Errores</h3>"
-   slide-data: "La detección y corrección de errores son fundamentales para garantizar la integridad de los datos transmitidos en redes de comunicación."
+ - title: "<h1>Introducción a la Detección y Corrección de Errores</h1>"
+   slide-data: "En este capítulo, exploraremos cómo se detectan y corrigen errores en las comunicaciones de datos y redes. Estos errores pueden surgir durante la transmisión debido a interferencias, ruido o fallos en el hardware, afectando la integridad de los datos."
 
- - title: "<h3>¿Qué son los Errores de Transmisión?</h3>"
-   slide-data: "Los errores de transmisión pueden ocurrir debido a interferencias, ruido, problemas en el hardware o fallos de conexión, afectando la calidad de los datos."
+ - title: "<h1>Importancia de la Detección de Errores</h1>"
+   slide-data: "La detección de errores es crucial en la comunicación de datos, ya que garantiza la integridad y la fiabilidad de la información transmitida. Sin métodos adecuados para detectar errores, los datos pueden ser corrompidos, llevando a malentendidos y fallas en el sistema."
 
- - title: "<h3>Métodos de Detección de Errores</h3>"
-   slide-data: "<ul><li><strong>Paridad:</strong> Agrega un bit para verificar la paridad de los datos.</li><li><strong>Suma de Comprobación:</strong> Calcula una suma de los valores de los datos.</li><li><strong>Código de Hamming:</strong> Permite detectar y corregir errores en los datos.</li><li><strong>CRC:</strong> Método robusto que usa polinomios para detectar errores.</li></ul>"
-   background: '#3498db'
+ - title: "<h1>Métodos de Detección de Errores</h1>"
+   slide-data: "<ul><li><strong>Checksum:</strong> Un valor calculado a partir de un bloque de datos para verificar su integridad.</li><li><strong>Códigos de paridad:</strong> Agrega un bit de paridad para hacer que el número total de bits '1' sea par o impar.</li><li><strong>Códigos de redundancia cíclica (CRC):</strong> Utiliza un algoritmo matemático para detectar cambios en los datos.</li></ul>"
 
- - title: "<h3>Métodos de Corrección de Errores</h3>"
-   slide-data: "<ul><li><strong>Repetición:</strong> Vuelve a enviar los datos si se detecta un error.</li><li><strong>Códigos de Corrección de Errores (ECC):</strong> Información adicional que permite corregir errores sin retransmitir.</li><li><strong>Algoritmos Avanzados:</strong> Como Reed-Solomon y Turbo Codes, usados en CD-ROMs y comunicaciones móviles.</li></ul>"
-   background: '#87CEEB'
+ - title: "<h1>Métodos de Corrección de Errores</h1>"
+   slide-data: "<ul><li><strong>Códigos de corrección de errores:</strong> Permiten la recuperación de datos sin necesidad de retransmisión. Ejemplos incluyen Hamming y Reed-Solomon.</li><li><strong>Repetición de mensajes:</strong> En caso de error, se reenvían los mensajes hasta que se recibe uno correcto.</li></ul>"
 
- - title: "<h3>Comparación de Métodos</h3>"
-   slide-data: "Es crucial evaluar la eficiencia, complejidad y protección de cada método para seleccionar el más adecuado según las necesidades de la red."
+ - title: "<h1>Ejemplos Prácticos</h1>"
+   slide-data: "Los métodos de detección y corrección se utilizan en diversas aplicaciones, como en redes WiFi, transmisión de video y en sistemas de almacenamiento de datos. Por ejemplo, los códigos CRC son comunes en Ethernet y las correcciones de Hamming son usadas en memoria RAM."
 
- - title: "<h3>Conclusiones</h3>"
-   slide-data: "La detección y corrección de errores son esenciales para la fiabilidad en las comunicaciones de datos. Un buen método puede mejorar el rendimiento de la red y la experiencia del usuario."
-   
- - title: "<h3>Más Información</h3>"
-   slide-data: "Para un análisis más profundo, consulta libros y artículos sobre telecomunicaciones que aborden la detección y corrección de errores en detalle."
+ - title: "<h1>Conclusiones</h1>"
+   slide-data: "La detección y corrección de errores son fundamentales para garantizar comunicaciones fiables y seguras. Con el aumento de los datos transmitidos, el uso de técnicas efectivas es más importante que nunca para mantener la integridad de la información."
+
+ - title: "<h1>Más Información</h1>"
+   slide-data: "Para obtener más detalles sobre la detección y corrección de errores, consulta el libro <em>Data Telecommunications</em>. Aquí encontrarás una exploración profunda de los algoritmos, técnicas y su aplicación en redes modernas."
 
 ---
 
@@ -35,4 +33,3 @@ slides:
         <h1>{{slide.title | safe }}</h1>{{ slide.slide-data | markdownify }}
 </section>               
 {% endfor %}
-
