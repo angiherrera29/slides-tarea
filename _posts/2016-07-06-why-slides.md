@@ -7,11 +7,11 @@ background: "#0a5"
 slides:
  - title: "<h1 style='font-size: 50px; color: black;'>10.1 INTRODUCCIÓN</h1>"
    slide-data: "La detección y corrección de errores son procesos críticos en las comunicaciones de datos. Los errores pueden producirse debido a ruido, interferencias o problemas de hardware, afectando la precisión de los datos. Los sistemas modernos de comunicación implementan diversas técnicas para minimizar y corregir estos errores, permitiendo una transmisión confiable de la información."
-   background: "#000000"
+   background: "#FFFFFF"
 
  - title: "<h1 style='font-size: 50px; color: black;'>10.2 CODIFICACIÓN DE BLOQUES</h1>"
    slide-data: "La codificación de bloques divide los datos en bloques de tamaño fijo, aplicando un proceso de codificación que facilita la detección y corrección de errores en cada bloque. **Ejemplo**: Al transmitir datos binarios en un sistema de comunicación, los bloques de bits pueden ser organizados en grupos de 7 bits con un bit de paridad agregado. Si un bit cambia, la paridad permitirá detectar el error."
-   background: "#000000"
+   background: "#FFFFFF"
 
  - title: "<h1 style='font-size: 50px;'>10.3 CÓDIGOS DE BLOQUES LINEALES</h1>"
    slide-data: "Los códigos de bloques lineales son una forma de codificación de bloques en la que los datos se organizan en estructuras algebraicas para simplificar la detección y corrección de errores. **Ejemplo**: El Código de Hamming (7,4) permite corregir un solo bit erróneo en cada bloque de datos de 7 bits, ideal para aplicaciones que requieren un nivel básico de corrección de errores."
