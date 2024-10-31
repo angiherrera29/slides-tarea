@@ -10,19 +10,19 @@ slides:
    background: "#000000"
 
  - title: "<h1 style='font-size: 50px;'>10.2 CODIFICACIÓN DE BLOQUES</h1>"
-   slide-data: "La codificación de bloques divide los datos en bloques de tamaño fijo, aplicando un proceso de codificación que facilita la detección y corrección de errores en cada bloque. Ejemplo: Al transmitir datos binarios en un sistema de comunicación, los bloques de bits pueden ser organizados en grupos de 7 bits con un bit de paridad agregado. Si un bit cambia, la paridad permitirá detectar el error."
+   slide-data: "La codificación de bloques divide los datos en bloques de tamaño fijo, aplicando un proceso de codificación que facilita la detección y corrección de errores en cada bloque. **Ejemplo**: Al transmitir datos binarios en un sistema de comunicación, los bloques de bits pueden ser organizados en grupos de 7 bits con un bit de paridad agregado. Si un bit cambia, la paridad permitirá detectar el error."
    background: "#000000"
 
  - title: "<h1 style='font-size: 50px;'>10.3 CÓDIGOS DE BLOQUES LINEALES</h1>"
-   slide-data: "Los códigos de bloques lineales son una forma de codificación de bloques en la que los datos se organizan en estructuras algebraicas para simplificar la detección y corrección de errores. Ejemplo: El Código de Hamming (7,4) permite corregir un solo bit erróneo en cada bloque de datos de 7 bits, ideal para aplicaciones que requieren un nivel básico de corrección de errores."
+   slide-data: "Los códigos de bloques lineales son una forma de codificación de bloques en la que los datos se organizan en estructuras algebraicas para simplificar la detección y corrección de errores. **Ejemplo**: El Código de Hamming (7,4) permite corregir un solo bit erróneo en cada bloque de datos de 7 bits, ideal para aplicaciones que requieren un nivel básico de corrección de errores."
    background: "#800080"
 
  - title: "<h1 style='font-size: 50px;'>10.4 CÓDIGOS CÍCLICOS</h1>"
-   slide-data: "Los códigos cíclicos son códigos de bloques lineales en los que las combinaciones de bits se representan como polinomios. Los errores se detectan mediante la divisibilidad del polinomio resultante. Ejemplo: El CRC (Cyclic Redundancy Check) es un tipo de código cíclico que detecta cambios en bloques de datos mediante un polinomio generador. Es ampliamente utilizado en redes Ethernet y almacenamiento en disco."
+   slide-data: "Los códigos cíclicos son códigos de bloques lineales en los que las combinaciones de bits se representan como polinomios. Los errores se detectan mediante la divisibilidad del polinomio resultante. **Ejemplo**: El CRC (Cyclic Redundancy Check) es un tipo de código cíclico que detecta cambios en bloques de datos mediante un polinomio generador. Es ampliamente utilizado en redes Ethernet y almacenamiento en disco."
    background: "#800080"
 
  - title: "<h1 style='font-size: 50px;'>10.5 SUMA DE VERIFICACIÓN</h1>"
-   slide-data: "La suma de verificación consiste en sumar los bits de los datos y enviar el resultado al receptor. Este valor se utiliza para verificar la integridad de los datos. Ejemplo: En redes IP, cada paquete de datos incluye un campo de suma de verificación para que el receptor verifique si los datos llegaron correctamente."
+   slide-data: "La suma de verificación consiste en sumar los bits de los datos y enviar el resultado al receptor. Este valor se utiliza para verificar la integridad de los datos. **Ejemplo**: En redes IP, cada paquete de datos incluye un campo de suma de verificación para que el receptor verifique si los datos llegaron correctamente."
    background: "#800080"
 
  - title: "<h1 style='font-size: 50px;'>10.6 LECTURA RECOMENDADA</h1>"
@@ -52,3 +52,4 @@ slides:
         {% if slide.image %}<img src="{{ slide.image }}" alt="{{ slide.title }}" style="max-width: 100%; height: auto;">{% endif %}
 </section>               
 {% endfor %}
+
