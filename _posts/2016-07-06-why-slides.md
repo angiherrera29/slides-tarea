@@ -6,8 +6,8 @@ background: "#0a5"
 
 slides:
  - title: "<h1 style='font-size: 50px;'>10.1 INTRODUCCIÓN</h1>"
-   slide-data: "La detección y corrección de errores son procesos críticos en las comunicaciones de datos. Los errores pueden producirse debido a ruido, interferencias o problemas de hardware, afectando la precisión de los datos. Los sistemas modernos de comunicación implementan diversas técnicas para minimizar y corregir estos errores, permitiendo una transmisión confiable de la información.
-   
+   slide-data: "La detección y corrección de errores son procesos críticos en las comunicaciones de datos. Los errores pueden producirse debido a ruido, interferencias o problemas de hardware, afectando la precisión de los datos. Los sistemas modernos de comunicación implementan diversas técnicas para minimizar y corregir estos errores, permitiendo una transmisión confiable de la información."
+
  - title: "<h1 style='font-size: 50px;'>10.2 CODIFICACIÓN DE BLOQUES</h1>"
    slide-data: "La codificación de bloques divide los datos en bloques de tamaño fijo, aplicando un proceso de codificación que facilita la detección y corrección de errores en cada bloque. Ejemplo: Al transmitir datos binarios en un sistema de comunicación, los bloques de bits pueden ser organizados en grupos de 7 bits con un bit de paridad agregado. Si un bit cambia, la paridad permitirá detectar el error."
 
@@ -34,8 +34,6 @@ slides:
 
  - title: "<h1 style='font-size: 50px;'>Más sobre Detección y Corrección de Errores</h1>"
    slide-data: "Consulta el libro <em>Data Telecommunications</em> para explorar en detalle cada tipo de medio de transmisión, sus características técnicas y aplicaciones prácticas en redes de comunicación actuales."
-
-
 ---
 
 {% for slide in page.slides %}                 
@@ -45,3 +43,4 @@ slides:
         {% if slide.image %}<img src="{{ slide.image }}" alt="{{ slide.title }}" style="max-width: 100%; height: auto;">{% endif %}
 </section>               
 {% endfor %}
+
