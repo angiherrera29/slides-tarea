@@ -39,7 +39,9 @@ slides:
 
 {% for slide in page.slides %}                 
 <section data-background="{% if slide.image %}{{slide.image}}{% elsif slide.background %}{{slide.background}}{% else %}{{page.background}}{% endif %}">
-        <h1>{{slide.title | safe }}</h1>{{ slide.slide-data | markdownify }}
+        <div>{{ slide.title | safe }}</div>
+        <div>{{ slide.slide-data | markdownify }}</div>
         {% if slide.image %}<img src="{{ slide.image }}" alt="{{ slide.title }}" style="max-width: 100%; height: auto;">{% endif %}
 </section>               
 {% endfor %}
+
