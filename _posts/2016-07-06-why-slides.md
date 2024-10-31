@@ -5,35 +5,32 @@ permalink: "/deteccion-correccion-errores/"
 background: "#0a5"
 
 slides:
- - title: "<h1 style='font-size: 50px;'>Introducción a la Detección y Corrección de Errores</h1>"
+ - title: "<h1 style='font-size: 50px;'>10.1 INTRODUCCIÓN</h1>"
    slide-data: "La detección y corrección de errores son fundamentales en las comunicaciones de datos. Estos procesos aseguran que la información se transmita de manera precisa, minimizando la pérdida y la corrupción de datos durante la transmisión."
-   image: "/images/deteccion-correccion-introduccion.jpg"
 
- - title: "<h1 style='font-size: 50px;'>Importancia de la Detección de Errores</h1>"
-   slide-data: "Detectar errores es esencial para mantener la integridad de los datos. Los errores pueden ocurrir debido a interferencias, ruido y otros factores durante la transmisión. Las técnicas de detección ayudan a identificar cuándo un error ha ocurrido."
-   image: "/images/importancia-deteccion-errores.jpg"
+ - title: "<h1 style='font-size: 50px;'>10.2 CODIFICACIÓN DE BLOQUES</h1>"
+   slide-data: "La codificación de bloques permite agrupar los datos en bloques de tamaño fijo, aplicando un algoritmo de codificación que facilita la detección y corrección de errores dentro de cada bloque."
 
- - title: "<h1 style='font-size: 50px;'>Métodos Comunes de Detección de Errores</h1>"
-   slide-data: "<ul><li><strong>Checksum:</strong> Suma de todos los bits en un conjunto de datos, que se envía junto con el mensaje. El receptor verifica la suma para detectar errores.</li><li><strong>CRC (Cyclic Redundancy Check):</strong> Un método más robusto que utiliza polinomios para detectar errores.</li><li><strong>Paridad:</strong> Añade un bit de paridad al final de los datos para asegurar que el número total de bits '1' sea par o impar.</li></ul>"
+ - title: "<h1 style='font-size: 50px;'>10.3 CÓDIGOS DE BLOQUES LINEALES</h1>"
+   slide-data: "Los códigos de bloques lineales aplican una combinación lineal de bits para la detección de errores. Ejemplos incluyen códigos Hamming y Reed-Solomon."
 
- - title: "<h1 style='font-size: 50px;'>Técnicas de Corrección de Errores</h1>"
-   slide-data: "Las técnicas de corrección de errores permiten no solo detectar, sino también corregir los errores en los datos transmitidos. Esto es crucial para garantizar una comunicación efectiva y precisa."
+ - title: "<h1 style='font-size: 50px;'>10.4 CÓDIGOS CÍCLICOS</h1>"
+   slide-data: "Los códigos cíclicos son una subcategoría de códigos de bloques lineales que utilizan operaciones de desplazamiento y se basan en el álgebra de polinomios para detectar errores."
 
- - title: "<h1 style='font-size: 50px;'>Métodos Comunes de Corrección de Errores</h1>"
-   slide-data: "<ul><li><strong>Códigos de Hamming:</strong> Permiten la corrección de errores en bits específicos mediante la adición de bits de paridad.</li><li><strong>Códigos Reed-Solomon:</strong> Utilizados en aplicaciones como CDs y DVDs, son eficientes para corregir errores de bloques de datos.</li><li><strong>Códigos de Convolución:</strong> Procesan datos en forma continua, permitiendo la detección y corrección de errores a medida que se transmiten.</li></ul>"
+ - title: "<h1 style='font-size: 50px;'>10.5 SUMA DE VERIFICACIÓN</h1>"
+   slide-data: "La suma de verificación es una técnica sencilla de detección de errores que consiste en sumar todos los bits y enviar el resultado. El receptor verifica esta suma para identificar errores."
 
- - title: "<h1 style='font-size: 50px;'>Comparación de Métodos</h1>"
-   slide-data: "La elección de un método de detección y corrección de errores depende de factores como el tipo de datos, el medio de transmisión y el nivel de error aceptable. Es crucial evaluar la eficiencia y la complejidad de cada método."
+ - title: "<h1 style='font-size: 50px;'>10.6 LECTURA RECOMENDADA</h1>"
+   slide-data: "Para profundizar en los temas de detección y corrección de errores, se recomienda leer el capítulo dedicado en 'Data Communications and Networking' de Behrouz Forouzan."
 
- - title: "<h1 style='font-size: 50px;'>Aplicaciones Prácticas</h1>"
-   slide-data: "Los métodos de detección y corrección de errores son utilizados en diversas aplicaciones, incluyendo:<ul><li>Redes de computadoras</li><li>Transmisiones de datos en tiempo real</li><li>Almacenamiento de datos en medios físicos</li></ul>"
-   image: "/images/aplicaciones-practicas.jpg"
+ - title: "<h1 style='font-size: 50px;'>10.7 TÉRMINOS CLAVE</h1>"
+   slide-data: "<ul><li>CRC: Checksum Redundante Cíclico</li><li>Hamming: Código para corrección de errores</li><li>Bits de Paridad: Bit adicional para verificación de errores</li><li>Checksum: Suma de control</li><li>Código de Convolución: Método para corrección de errores en tiempo real</li></ul>"
 
- - title: "<h1 style='font-size: 50px;'>Conclusiones</h1>"
+ - title: "<h1 style='font-size: 50px;'>10.8 RESUMEN</h1>"
    slide-data: "La detección y corrección de errores son esenciales para la confiabilidad en las comunicaciones de datos. Implementar métodos adecuados asegura la integridad de la información y mejora la eficiencia de la transmisión."
 
- - title: "<h1 style='font-size: 50px;'>Más Información</h1>"
-   slide-data: "Para obtener más detalles sobre la detección y corrección de errores, consulta el libro <em>Data Telecommunications</em>. Aquí encontrarás una exploración profunda de los algoritmos, técnicas y su aplicación en redes modernas."
+ - title: "<h1 style='font-size: 50px;'>10.9 CONJUNTO DE PRÁCTICAS</h1>"
+   slide-data: "Este capítulo incluye un conjunto de prácticas para aplicar los conceptos de detección y corrección de errores en casos de estudio y ejercicios prácticos."
 
 ---
 
@@ -44,4 +41,5 @@ slides:
         {% if slide.image %}<img src="{{ slide.image }}" alt="{{ slide.title }}" style="max-width: 100%; height: auto;">{% endif %}
 </section>               
 {% endfor %}
+
 
