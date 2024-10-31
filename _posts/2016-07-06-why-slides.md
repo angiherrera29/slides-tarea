@@ -11,7 +11,7 @@ slides:
 
  - title: "<h1 style='font-size: 50px;'>Importancia de la Detección de Errores</h1>"
    slide-data: "Detectar errores es esencial para mantener la integridad de los datos. Los errores pueden ocurrir debido a interferencias, ruido y otros factores durante la transmisión. Las técnicas de detección ayudan a identificar cuándo un error ha ocurrido."
-   image: "/images/importancia-deteccion-errores.jpg"
+   image: "/images/"
 
  - title: "<h1 style='font-size: 50px;'>Métodos Comunes de Detección de Errores</h1>"
    slide-data: "<ul><li><strong>Checksum:</strong> Suma de todos los bits en un conjunto de datos, que se envía junto con el mensaje. El receptor verifica la suma para detectar errores.</li><li><strong>CRC (Cyclic Redundancy Check):</strong> Un método más robusto que utiliza polinomios para detectar errores.</li><li><strong>Paridad:</strong> Añade un bit de paridad al final de los datos para asegurar que el número total de bits '1' sea par o impar.</li></ul>"
@@ -27,7 +27,7 @@ slides:
 
  - title: "<h1 style='font-size: 50px;'>Aplicaciones Prácticas</h1>"
    slide-data: "Los métodos de detección y corrección de errores son utilizados en diversas aplicaciones, incluyendo:<ul><li>Redes de computadoras</li><li>Transmisiones de datos en tiempo real</li><li>Almacenamiento de datos en medios físicos</li></ul>"
-   image: "/images/aplicaciones-practicas.jpg"
+   image: "/images/"
 
  - title: "<h1 style='font-size: 50px;'>Conclusiones</h1>"
    slide-data: "La detección y corrección de errores son esenciales para la confiabilidad en las comunicaciones de datos. Implementar métodos adecuados asegura la integridad de la información y mejora la eficiencia de la transmisión."
