@@ -32,6 +32,9 @@ slides:
  - title: "<h1 style='font-size: 50px;'>Conclusiones</h1>"
    slide-data: "La detección y corrección de errores son esenciales para la confiabilidad en las comunicaciones de datos. Implementar métodos adecuados asegura la integridad de la información y mejora la eficiencia de la transmisión."
 
+ - title: "<h1 style='font-size: 50px;'>Más Información</h1>"
+   slide-data: "Para obtener más detalles sobre la detección y corrección de errores, consulta el libro <em>Data Telecommunications</em>. Aquí encontrarás una exploración profunda de los algoritmos, técnicas y su aplicación en redes modernas."
+
 ---
 
 {% for slide in page.slides %}                 
